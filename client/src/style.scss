@@ -85,6 +85,7 @@ $lightGrey: #cfcfcf;
         .logo {
           img {
             width: 120px;
+            cursor: pointer;
           }
         }
 
@@ -120,6 +121,21 @@ $lightGrey: #cfcfcf;
             }
           }
         }
+      }
+    }
+
+    // Footer
+
+    footer {
+      margin-top: 100px;
+      padding: 50px;
+      background-color: $lightBlue;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      img {
+        height: 50px;
       }
     }
   }
