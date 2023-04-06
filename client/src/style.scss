@@ -104,7 +104,8 @@ $lightGrey: #cfcfcf;
           }
 
           .write {
-            background-color: $lightBlue;
+            background-color: $skyBlue;
+            color: #fff;
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -136,6 +137,79 @@ $lightGrey: #cfcfcf;
       font-size: 12px;
       img {
         height: 50px;
+      }
+    }
+
+    // Home
+    .home {
+      .posts {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+
+        .post {
+          display: flex;
+          gap: 100px;
+
+          &:nth-child(2n + 1) {
+            flex-direction: row-reverse;
+          }
+
+          .image {
+            flex: 2;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              background-color: $skyBlue;
+              top: 20px;
+              left: -20px;
+              z-index: -1;
+            }
+
+            img {
+              width: 100%;
+              max-height: 400px;
+              object-fit: cover;
+            }
+          }
+
+          .content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h1 {
+              font-size: 48px;
+            }
+
+            p {
+              font-size: 18px;
+            }
+
+            button {
+              width: max-content;
+              padding: 10px 20px;
+              border: none;
+              cursor: pointer;
+              background-color: #fff;
+              border: 1px solid $skyBlue2;
+              color: $skyBlue2;
+              font-weight: 500;
+
+              &:hover {
+                border: 1px solid #fff;
+                background-color: $skyBlue2;
+                color: #fff;
+              }
+            }
+          }
+        }
       }
     }
   }
