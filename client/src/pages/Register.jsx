@@ -30,7 +30,7 @@ const Register = () => {
 
   return (
     <div className="register">
-      <h1>Register</h1>
+      <h1>Sign Up</h1>
       <form>
         <input
           type="text"
@@ -53,7 +53,7 @@ const Register = () => {
           onChange={handleChange}
           required
         />
-        <button onClick={handleSubmit}>Register</button>
+        <button onClick={handleSubmit}>SIGN UP</button>
         {err && <p>{err}</p>}
         <span>
           Do you have an account? <Link to="/login">Login</Link>
